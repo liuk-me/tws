@@ -118,3 +118,9 @@
   border: none;
   background: none;
 }
+
+@media screen and (max-width: 550px) {
+  #nav-search-input {
+    width: 150px;
+  }
+}
