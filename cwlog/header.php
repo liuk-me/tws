@@ -3,6 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
   <title><?php $this->archiveTitle(array(
           'category'  =>  _t('分类 %s 下的文章'),
           'search'    =>  _t('包含关键字 %s 的文章'),
