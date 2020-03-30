@@ -1,0 +1,36 @@
+.sidebar-list {
+  width: 100%;
+  min-height: 15px;
+  overflow: hidden;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.sidebar-list label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sidebar-list ul {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.sidebar-list ul li {
+  display: block;
+  margin: 3px;
+  font-size: 14px;
+  min-height: 15px;
+}
+
+.sidebar-link {
+  width: 100%;
+}
+
+.sidebar-tag {
+  float: left;
+  min-width: 1px;
+  margin-right: 5px;
+}

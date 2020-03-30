@@ -1,0 +1,147 @@
+.content-row {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.content-row-title {
+  width: 100%;
+}
+
+.content-row-title a {
+  color: #111;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.content-row-author, .content-row-date, .content-row-category {
+  float: left;
+  margin: 5px 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.content-row-author {
+  margin-left: 0;
+}
+
+.content-row-text {
+  width: 100%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.content-row-text h1,h2,h3,h4 {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content-row-text p, .content-row-text hr, .content-row-text ol, .content-row-text ul {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-row-text img, .content-row-text pre, .content-row-text blockquote {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.content-row-text h1 {
+  font-size: 20px;
+}
+
+.content-row-text h2 {
+  font-size: 18px;
+}
+
+.content-row-text h3 {
+  font-size: 16px;
+}
+
+.content-row-text h4 {
+  font-size: 14px;
+}
+
+.content-row-text a {
+  margin: 3px;
+  color: #3399ff;
+}
+
+.content-row-text ol {
+  list-style-type: decimal;
+  padding-inline-start: 40px;
+}
+
+.content-row-text ol li{
+  list-style: decimal;
+}
+
+.content-row-text ul {
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+
+.content-row-text ul li{
+  list-style: disc;
+}
+
+.content-row-text code {
+  background: rgb(235,235,235);
+  padding: 3px 3px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #B94A48;
+}
+
+.content-row-text pre {
+  background: rgb(235,235,235);
+  padding: 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.content-row-text pre code {
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.content-row-text blockquote {
+  margin-left: 5px;
+  padding-left: 16px;
+  border-left: 4px solid #E9E9E6;
+  color: #777;
+}
+
+.content-row-text p.more {
+  width: 100%;
+  text-align: center;
+}
+
+#content .tags {
+  width: 100%;
+  font-size: 14px;
+}
+
+#content .postNav {
+  width: 100%;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+#content .left {
+  float: left;
+}
+
+#content .right {
+  float: right;
+}
+
