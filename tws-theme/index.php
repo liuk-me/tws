@@ -1,8 +1,8 @@
 <?php
 /**
- * 简单，简洁，待完善
+ * 一款简洁的支持Pjax的模板，TWS意为"The Winter Sun" 即 "冬日"
  *
- * @package 寒冬日志
+ * @package TWS
  * @author liuk_me@outlook.com
  * @version 0.9
  * @link https://cwlog.net
