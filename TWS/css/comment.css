@@ -2,8 +2,13 @@
   margin-top: 35px;
 }
 
+#comments {
+  margin: 15px 0;
+}
+
 .comment-list {
   width: 100%;
+  margin-top: 15px;
 }
 
 .comment-list li {
@@ -37,6 +42,10 @@
   margin-top: 2px;
   font-size: 14px;
   color: #666;
+}
+
+.comment-content {
+  margin-top: 5px;
 }
 
 .comment-reply {
@@ -77,4 +86,44 @@
   height: 26px;
   border: none;
   background: #EFEFEF;
+}
+
+.page-navigator {
+  width: 100%;
+  display: block;
+  min-width: 1px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 25%;
+  white-space: nowrap;
+}
+
+.page-navigator li {
+  display: block;
+  min-width: 1px;
+  height: 20px;
+  font-size: 16px;
+  float: left;
+  margin: 0 10px;
+  padding-top: 1px;
+}
+
+.page-navigator li.current a {
+  color: #333;
+  pointer-events: none;
+  text-decoration: underline;
+}
+
+.page-navigator li.prev, .page-navigator li.next {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .page-navigator {
+    margin-left: 10%;
+  }
+  .page-navigator li {
+    margin: 0 5px;
+    padding-top: 3px;
+  }
 }

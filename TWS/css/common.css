@@ -54,7 +54,7 @@ input, button, textarea{
   display: block;
   min-width: 1px;
   height: 20px;
-  margin-left: 20%;
+  margin-left: 25%;
   white-space: nowrap;
 }
 
@@ -102,6 +102,18 @@ input, button, textarea{
 #footer a {
   color: #999;
   text-decoration: none;
+}
+
+#pjax_loading {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 99999;
+  display: none;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 760px) {

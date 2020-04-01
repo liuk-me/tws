@@ -10,6 +10,7 @@
           'tag'       =>  _t('标签 %s 下的文章'),
           'author'    =>  _t('%s 发布的文章')
       ), '', ' - '); ?><?php $this->options->title(); ?></title>
+  <link rel="shortcut icon" href="<?php $this->options->themeUrl('img/favicon.ico'); ?>">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/common.css'); ?>">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/header.css'); ?>">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/content.css'); ?>">
@@ -30,9 +31,25 @@
         container: '#pjax-container',
         fragment: '#pjax-container',
         timeout: 8000
+      }).on('pjax:send', function() {
+        $("#pjax_loading").show();
+      }).on('pjax:complete', function() {
+        $("#pjax_loading").hide();
       });
     </script>
   <?php } ?>
+  <style>
+    <?php if($this->options->LoadingColor){ ?>
+      #pjax_loading {
+        background-color: <?php $this->options->LoadingColor(); ?>;
+      }
+    <?php }?>
+    #pjax_loading img {
+      <?php if($this->options->LoadingWidth){ ?>width: <?php $this->options->LoadingWidth(); ?>;<?php }?>
+      <?php if($this->options->LoadingHeight){ ?>height: <?php $this->options->LoadingHeight(); ?>;<?php }?>
+      <?php if($this->options->LoadingTop){ ?>margin-top: <?php $this->options->LoadingTop(); ?>;<?php }?>
+    }
+  </style>
   <?php $this->header(); ?>
 </head>
 <body>

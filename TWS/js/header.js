@@ -11,3 +11,4 @@ function searchClick(){
     $("#nav-search-submit").hide();
   }
 }
+

@@ -18,7 +18,7 @@ $this->need('header.php');
 <?php }else{ ?>
   <br><br><center><?php _e('没有找到对应内容'); ?></center>
 <?php } ?>
-  <div id="pageNav"><?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?></div>
+  <div id="pageNav"><?php $this->pageNav('&laquo;', '&raquo;'); ?></div>
 </div>
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>

@@ -11,8 +11,9 @@ $('document').ready(function() {
     }, 100);
   }
 });
-function BackTop() {
+
+function BackTop(){
   $('body,html').animate({
     scrollTop: 0
-  }, 500);
+  },1000);
 }
