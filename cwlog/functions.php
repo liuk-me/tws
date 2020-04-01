@@ -11,13 +11,14 @@ function themeConfig($form) {
     $sidebarSet = new Typecho_Widget_Helper_Form_Element_Checkbox(
       'sidebarSet',
       array(
+      	'phoneSidebar' => _t('移动端显示侧边栏'),
         'ShowNewPosts' => _t('显示最新文章'),
         'ShowHotPosts' => _t('显示热门文章'),
         'ShowCategory' => _t('显示分类'),
         'ShowTags' => _t('显示标签云'),
         'ShowDatePosts' => _t('显示归档'),
         'ShowOther' => _t('显示其它杂项')),
-      array('ShowNewPosts', 'ShowHotPosts', 'ShowCategory', 'ShowTags', 'ShowDatePosts', 'ShowOther'), _t('侧边栏显示')
+      array('phoneSidebar', 'ShowNewPosts', 'ShowHotPosts', 'ShowCategory', 'ShowTags', 'ShowDatePosts', 'ShowOther'), _t('侧边栏显示')
     );
 
     $form->addInput($sidebarSet->multiMode());
@@ -39,4 +40,24 @@ function getHotPosts($limit = 10){
         echo '<li class="sidebar-link"><a href="'.$val['permalink'].'" title="'.$title.'" target="_blank">'.$title.'</a></li>';        
       }
     }
+}
+
+//获取Gravatar头像
+function getGravatar($email, $s = 96, $d = 'mp', $r = 'g', $img = false, $atts = array())
+{
+    preg_match_all('/((\d)*)@qq.com/', $email, $vai);
+    if (empty($vai['1']['0'])) {
+        $url = 'https://www.gravatar.com/avatar/';
+        $url .= md5(strtolower(trim($email)));
+        $url .= "?s=$s&d=$d&r=$r";
+        if ($img) {
+            $url = '<img src="' . $url . '"';
+            foreach ($atts as $key => $val)
+                $url .= ' ' . $key . '="' . $val . '"';
+            $url .= ' />';
+        }
+    }else{
+        $url = 'https://q2.qlogo.cn/headimg_dl?dst_uin='.$vai['1']['0'].'&spec=100';
+    }
+    return  $url;
 }

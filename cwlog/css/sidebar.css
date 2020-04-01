@@ -31,6 +31,8 @@
 
 .sidebar-tag {
   float: left;
+  height: 15px;
   min-width: 1px;
-  margin-right: 5px;
+  padding: 2px;
+  margin-right: 10px;
 }

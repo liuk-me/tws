@@ -49,11 +49,12 @@ input, button, textarea{
   width: 100%;
 }
 
-#pageNav ol{
+#pageNav ol {
+  display: block;
   min-width: 1px;
   height: 20px;
-  overflow: hidden;
-  margin-left: 30%;
+  margin-left: 20%;
+  white-space: nowrap;
 }
 
 #pageNav ol li {
@@ -62,7 +63,18 @@ input, button, textarea{
   height: 20px;
   font-size: 16px;
   float: left;
-  margin: 0 5px;
+  margin: 0 10px;
+  padding-top: 1px;
+}
+
+#pageNav ol li.current a {
+  color: #555;
+  pointer-events: none;
+  text-decoration: underline;
+}
+
+#pageNav ol li.prev, #pageNav ol li.next {
+  padding-top: 0;
 }
 
 #sidebar {
@@ -97,6 +109,14 @@ input, button, textarea{
   }
   #sidebar {
     margin-left: 0;
-    margin-top: 25px;
+    margin-top: 50px;
+  }
+  #pageNav ol {
+    margin-left: 10%;
+  }
+  #pageNav ol li {
+    margin: 0 5px;
+    padding-top: 3px;
   }
 }
+

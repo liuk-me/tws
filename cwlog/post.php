@@ -15,6 +15,7 @@
       <li class="left">上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
       <li class="right">下一篇: <?php $this->theNext('%s','没有了'); ?></li>
   </ul>
+  <?php $this->need('comments.php'); ?>
 </div>
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>

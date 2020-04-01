@@ -15,7 +15,7 @@
 
 .content-row-author, .content-row-date, .content-row-category {
   float: left;
-  margin: 5px 15px;
+  margin: 0 5px;
   color: #555;
   font-size: 14px;
 }
@@ -33,19 +33,30 @@
   line-height: 20px;
 }
 
-.content-row-text h1,h2,h3,h4 {
+.content-row-text h1,
+.content-row-text h2,
+.content-row-text h3,
+.content-row-text h4 {
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.content-row-text p, .content-row-text hr, .content-row-text ol, .content-row-text ul {
+.content-row-text p,
+.content-row-text hr,
+.content-row-text ol,
+.content-row-text ul {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.content-row-text img, .content-row-text blockquote {
+.content-row-text img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.content-row-text blockquote {
   width: 100%;
   margin-bottom: 5px;
 }
@@ -100,7 +111,7 @@
 .content-row-text pre {
   width: 95%;
   background: rgb(235,235,235);
-  padding: 15px;
+  padding: 15px 2.5%;
   margin-left: 5px;
   border-radius: 5px;
   max-height: 300px;
@@ -146,3 +157,4 @@
 #content .right {
   float: right;
 }
+

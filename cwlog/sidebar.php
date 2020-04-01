@@ -1,4 +1,8 @@
-<?php if(!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php
+if(!defined('__TYPECHO_ROOT_DIR__')) exit;
+if(!in_array('phoneSidebar', $this->options->sidebarSet)){?>
+<style>@media screen and (max-width: 760px){ #sidebar { display: none;}}</style>
+<?php } ?>
 <div id="sidebar">
   <?php if(in_array('ShowNewPosts', $this->options->sidebarSet)){ ?>
   <div class="sidebar-list">
@@ -32,10 +36,10 @@
           <?php foreach ($children as $mid) {
             $child = $categorys->getCategory($mid); ?>
             <li class="sidebar-link"><a href="<?php echo $child['permalink'] ?>" title="<?php echo $child['name']; ?>">&nbsp;-><?php echo $child['name']; ?></a></li>
-          <?php }
-          }
-        }
-      } ?>
+          <?php } ?>
+        <?php } ?>
+      <?php } ?>
+    <?php } ?>
     </ul>
   </div>
   <?php } ?>
@@ -44,11 +48,11 @@
     <label><?php _e('标签'); ?></label>
     <ul>
       <?php Typecho_Widget::widget('Widget_Metas_Tag_Cloud','ignoreZeroCount=1&limit=20')->to($tags); ?>
-      <?php if($tags->have()): ?>
-      <?php while ($tags->next()): ?>
-        <li class="sidebar-tag"><a href="<?php $tags->permalink();?>"><?php $tags->name(); ?></a></li>
-      <?php endwhile; ?>
-      <?php endif; ?>
+      <?php if($tags->have()){ ?>
+        <?php while ($tags->next()){ ?>
+          <li class="sidebar-tag"><a href="<?php $tags->permalink();?>"><?php $tags->name(); ?></a></li>
+        <?php } ?>
+      <?php } ?>
     </ul>
   </div>
   <?php } ?>

@@ -15,8 +15,8 @@
    <?php while($this->next()){ ?>
    <div class="content-row">
      <div class="content-row-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></div>
-     <div class="content-row-author"><?php _e('作者: '); ?><a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a></div>
-     <div class="content-row-date"><?php _e('时间: '); ?><?php $this->date(); ?></div>
+     <div class="content-row-author"><?php _e('作者: '); ?><a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a> </div>
+     <div class="content-row-date"><?php _e('时间: '); ?><?php $this->date(); ?> </div>
      <div class="content-row-category"><?php _e('分类: '); ?><?php $this->category(','); ?></div>
      <div class="content-row-text">
        <?php $this->content('- 阅读剩余部分 -'); ?>
