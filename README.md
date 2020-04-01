@@ -1,7 +1,9 @@
-# cwlogTheme
+# TWS-Theme
+
+TWS 意为 "The winter sun" 即 "冬日"
 
 #### 介绍
-一款简洁的支持 Pjax 的 Typecho模板
+一款简洁且支持Pjax的Typecho模板
 
 #### 安装教程
 将TWS目录上传至/usr/themes目录下
