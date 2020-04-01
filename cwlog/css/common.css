@@ -68,7 +68,7 @@ input, button, textarea{
 }
 
 #pageNav ol li.current a {
-  color: #555;
+  color: #333;
   pointer-events: none;
   text-decoration: underline;
 }
