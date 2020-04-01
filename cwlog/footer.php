@@ -5,6 +5,8 @@
     <p><a href="http://www.beian.miit.gov.cn/" target="_blank"><?php $this->options->icpNum(); ?></a></p>
   <?php }?>
 </div>
+<div id="back-top" state="off"><button type="buttom" id="back-top-btn"><i class="fa fa-chevron-up"></i></button></div>
+</div>
 <?php $this->footer(); ?>
 </body>
 </html>

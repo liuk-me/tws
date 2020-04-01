@@ -1,0 +1,26 @@
+#back-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20%;
+  display: none;
+}
+
+#back-top button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 12px;
+  background: #666;
+  outline: none;
+}
+
+#back-top button i {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  #back-top {
+    position: fixed;
+    bottom: 50px;
+    right: 45px;
+  }
+}

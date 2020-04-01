@@ -15,12 +15,28 @@
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/content.css'); ?>">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/sidebar.css'); ?>">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/comment.css'); ?>">
+  <link rel="stylesheet" href="<?php $this->options->themeUrl('css/widgets.css'); ?>">
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
   <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="<?php $this->options->themeUrl('js/header.js'); ?>"></script>
+  <?php if(in_array('BackTop', $this->options->sidebarSet)){ ?>
+    <script type="text/javascript">$('document').ready(function(){$('#back-top').attr('state', 'on');});</script>
+  <?php } ?>
+  <script type="text/javascript" src="<?php $this->options->themeUrl('js/widgets.js'); ?>"></script>
+  <?php if(in_array('ActivePjax', $this->options->sidebarSet)){ ?>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    <script type="text/javascript">
+      $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[no-pjax])', {
+        container: '#pjax-container',
+        fragment: '#pjax-container',
+        timeout: 8000
+      });
+    </script>
+  <?php } ?>
   <?php $this->header(); ?>
 </head>
 <body>
+<div id="pjax-container">
 <div id="nav-fixed">
   <div id="nav">
     <div id="nav-title"><?php $this->options->title(); ?></div>

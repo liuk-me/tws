@@ -8,6 +8,16 @@ function themeConfig($form) {
     $hotPosts = new Typecho_Widget_Helper_Form_Element_Text('hotPosts', NULL, 10, _t('热门文章列表条数'), _t('如果开启了热门文章列表，则输出此条数的记录'));
     $form->addInput($hotPosts);
 
+    $themeSet = new Typecho_Widget_Helper_Form_Element_Checkbox(
+      'sidebarSet',
+      array(
+      	'ActivePjax' => _t('启用Pjax'),
+      	'BackTop'    => _t('启用返回顶层按钮'),
+      ),
+      array('ActivePjax', 'BackTop'), _t('主题设置')
+    );
+    $form->addInput($themeSet->multiMode());
+
     $sidebarSet = new Typecho_Widget_Helper_Form_Element_Checkbox(
       'sidebarSet',
       array(
@@ -15,12 +25,11 @@ function themeConfig($form) {
         'ShowNewPosts' => _t('显示最新文章'),
         'ShowHotPosts' => _t('显示热门文章'),
         'ShowCategory' => _t('显示分类'),
-        'ShowTags' => _t('显示标签云'),
+        'ShowTags' => _t('显示标签'),
         'ShowDatePosts' => _t('显示归档'),
         'ShowOther' => _t('显示其它杂项')),
       array('phoneSidebar', 'ShowNewPosts', 'ShowHotPosts', 'ShowCategory', 'ShowTags', 'ShowDatePosts', 'ShowOther'), _t('侧边栏显示')
     );
-
     $form->addInput($sidebarSet->multiMode());
 }
 

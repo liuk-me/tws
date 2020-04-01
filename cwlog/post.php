@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 <div id="content">
   <div class="content-row">
-    <div class="content-row-title"><a><?php $this->title() ?></a></div>
+    <div class="content-row-title"><?php $this->title() ?></div>
     <div class="content-row-author"><?php _e('作者: '); ?><a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a></div>
     <div class="content-row-date"><?php _e('时间: '); ?><?php $this->date(); ?></div>
     <div class="content-row-category"><?php _e('分类: '); ?><?php $this->category(','); ?></div>
