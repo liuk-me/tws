@@ -10,11 +10,9 @@ $('document').ready(function() {
       }
     }, 100);
   }
-  $('#back-top-btn').click(function() {
-    $('body,html').animate({
-      scrollTop: 0
-    },1000);
-    return false;
-  });
-
 });
+function BackTop() {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 500);
+}
