@@ -44,7 +44,7 @@
       <form action="<?php $this->options->siteUrl(); ?>" method="post">
         <input type="text" name="s" id="nav-search-input">
         <button type="submit" id="nav-search-submit"><i class="fa fa-search"></i></button>
-        <button type="button" id="nav-search-btn"><i id="nav-search-i" class="fa fa-search"></i></button>
+        <button onclick="searchClick()" type="button" id="nav-search-btn"><i id="nav-search-i" class="fa fa-search"></i></button>
       </form>
     </div>
     <div id="nav-link">
