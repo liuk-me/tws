@@ -1,6 +1,6 @@
 <?php
 /**
- * 一款简洁的支持Pjax的模板，TWS意为"The Winter Sun" 即 "冬日"
+ * 一款简洁且支持Pjax的模板，TWS意为"The Winter Sun" 即 "冬日"
  *
  * @package TWS
  * @author liuk_me@outlook.com
