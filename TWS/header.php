@@ -35,6 +35,7 @@
         $("#pjax_loading").show();
       }).on('pjax:complete', function() {
         $("#pjax_loading").hide();
+        BaiduSEO();
       });
     </script>
   <?php } ?>
