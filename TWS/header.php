@@ -66,7 +66,7 @@
     </div>
     <div id="nav-link">
       <ul>
-        <li><a href="<?php if($this->is('index')){ echo "#"; }else{ $this->options->siteUrl(); }?>"><?php _e('首页'); ?></a></li>
+        <li><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
         <li id="nav-category">
           <a href="#"><?php _e('分类'); ?></a>
           <div id="nav-category-list">

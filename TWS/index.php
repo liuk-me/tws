@@ -21,6 +21,7 @@
      <div class="content-row-text">
        <?php $this->content('- 阅读剩余部分 -'); ?>
      </div>
+     <hr>
    </div>
    <?php } ?>
    <div id="pageNav"><?php $this->pageNav('&laquo;', '&raquo;'); ?></div>
